@@ -14,6 +14,10 @@
 	<description>Demo project of REST</description>
 	<dependencies>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>com.adrian</groupId>
 			<artifactId>mongo</artifactId>
 			<version>1.0</version>
