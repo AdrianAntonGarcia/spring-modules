@@ -7,7 +7,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @ComponentScan(basePackages={"com.adrian"})
-@EnableMongoRepositories(basePackages = "com.adrian.accessingmongodb")
 public class BootApplication {
 
 	public static void main(String[] args) {
