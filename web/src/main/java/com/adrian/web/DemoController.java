@@ -1,5 +1,6 @@
 package com.adrian.web;
 
+import com.adrian.accessingmongodb.Customer;
 import com.adrian.accessingmongodb.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +14,7 @@ public class DemoController {
 
     @GetMapping("/")
     public String home() {
-        //this.repo.save(new Customer("Adrian", "gar"));
+        this.repo.save(new Customer("Adrian", "gar"));
         System.out.println(this.repo.findAll());
         return "Llamada correcta";
     }
